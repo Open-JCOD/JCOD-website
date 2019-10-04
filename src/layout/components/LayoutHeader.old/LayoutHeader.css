@@ -1,0 +1,34 @@
+.layout-header-wrapper {
+  padding: 1em;
+  background: #1565c0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 5em 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.layout-header {
+  max-width: 1450px;
+  position: relative;
+  z-index: 1;
+}
+.layout-header-logo {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+  left: 50%;
+  top: 20%;
+}
+.layout-header-logo img {
+  width: 25rem;
+  will-change: transform;
+  animation: spin 10s cubic-bezier(0, 0, 0, 1) infinite 2.5s;
+}

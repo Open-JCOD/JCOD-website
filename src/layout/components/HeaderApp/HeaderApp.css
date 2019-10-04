@@ -1,0 +1,49 @@
+.app-header-wrapper {
+  color: #fff;
+  background-color: #0d47a1;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  height: 3.5em;
+  box-sizing: border-box;
+
+  transform: translateY(-110%);
+  transition: transform 0.3s ease;
+}
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1450px;
+}
+.app-header-nav {
+  display: flex;
+}
+.app-header-nav > * {
+  display: inline-flex;
+  padding-left: 1.5em;
+}
+
+.app-header a {
+  color: currentColor;
+}
+.app-header h1 {
+  margin: 0;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+.app-header img.logo {
+  max-height: 3.2em;
+  margin: -1em 0;
+}

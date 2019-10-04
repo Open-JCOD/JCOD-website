@@ -1,0 +1,46 @@
+.jcod-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em;
+}
+.jcod-presentation .logo {
+  max-width: 4.5em;
+  height: auto;
+}
+@media (min-width: 450px) {
+  .jcod-presentation .logo {
+    max-width: 8em;
+  }
+}
+.jcod-presentation .bubble {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  background: #fbc02c;
+  background: #222;
+  margin-left: 1.2em;
+  padding: 2em;
+  white-space: pre-line;
+  border-radius: 0.4em;
+  font-weight: 700;
+  font-style: italic;
+  min-height: 1.6em;
+}
+.jcod-presentation .bubble:before {
+  content: "";
+  position: absolute;
+  top: 0.8em;
+  left: 0;
+  width: 1em;
+  padding-top: 1em;
+  background: #222;
+  z-index: 0;
+  transform: rotate(-45deg) translateX(-50%) scale(1.3);
+}
+
+.jcod-presentation .content {
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 0 0.05em black;
+}
