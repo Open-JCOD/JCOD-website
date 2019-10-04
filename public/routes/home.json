@@ -1,0 +1,457 @@
+{
+  "route": {
+    "path": "/",
+    "preload": false
+  },
+  "jcodContent": [
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "direction": "column-stretch",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "## About JCOD  \nJCOD is a data-interchange format, a subset of JSON. It help of dynamically build layout from a list of Template Components, to code faster, improved isolation and stop with the static layout.  \n\n"
+            }
+          },
+
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "SliceWrapper",
+                  "props": {
+                    "element": "section",
+                    "direction": "column-stretch",
+                    "children": [
+                      {
+                        "component": "CodeViewer",
+                        "props": {
+                          "className": "slice-col",
+                          "language": "json",
+                          "legend": "JCOD node",
+                          "children": [
+                            "// This JCOD... :",
+                            "{{{jcodPresentation.jcod}}}"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+
+                {
+                  "component": "SliceWrapper",
+                  "props": {
+                    "element": "section",
+                    "direction": "column-stretch",
+                    "children": [
+                      {
+                        "component": "CodeViewer",
+                        "props": {
+                          "className": "slice-col",
+                          "theme": "code-light",
+                          "language": "html",
+                          "legend": "Markup returned",
+                          "children": [
+                            "// ...After parsing, will set this snippet of code in your Layout: \n",
+                            "{{{jcodPresentation.markup}}}"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "Give for rendering :"
+            }
+          },
+          {
+            "component": "ExposeAllJcode",
+            "props": {}
+          }
+        ]
+      }
+    },
+
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "direction": "column",
+        "theme": "dark",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "## How JCOD works and how use it?"
+            }
+          },
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "JCOD requires a parser to be interpreted to a rendering tool (such as React, Vue.JS or the DOM of the Navigator).  \nJCOD is only an object syntax specification. So the range of capabilities or performance, totally dependent on the parser that will be used."
+            }
+          },
+          {
+            "component": "img",
+            "props": {
+              "src": "img/JCOD-Parser.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "direction": "column-stretch",
+        "theme": "dark",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "__Note:__  \n\nAll HTML elements can be considered as the default Web Components given by the browser. Some are very simple, like the `<div>`, `<span>` or other `<section>`. Other, like `<video>` element, are more complex.  \nFinally, HTML elements and Components are exactly used in the same way.  \n\nSo, for all these reasons, and even if this is not the original purpose, __JCOD can also be used for calling the HTML Elements__, in addition to __web&nbsp;components__ or any __Components__ based on any render library (like React, Vue.js, Svelte or any other), to compose a web view to replacing the XML/HTML/JSX/MDX/Any Other syntax."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "theme": "dark",
+        "direction": "column-stretch",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "## Definition of JCOD node  \n\nBelow, you can see how the JCOD API definition is very simple : "
+            }
+          },
+          {
+            "component": "CodeViewer",
+            "props": {
+              "className": "slice-col",
+              "language": "javascript",
+              "children": "{{{jcodObjectDesc}}}"
+            }
+          },
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "___JCOD has just been designed to allow you to write your components from a JSON object.  \nAnd that's all.  \nQuite simply.___"
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "direction": "column",
+        "theme": "color",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "## How to write JCOD  \nBelow, you can see some very simple uses of JCOD nodes."
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "## Sample Of JCOD node for HTML  \nBelow, you can see some samples of JCOD node of HTML elements. It illustrates how to integrate the Elements increasingly complex."
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "{{sample.htmlDetails.simple.legend}} :"
+            }
+          },
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "className": "slice-col",
+                    "legend": "Jcod Node",
+                    "language": "json",
+                    "children": "{{{sample.htmlDetails.simple.jcod}}}"
+                  }
+                },
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "theme": "code-light",
+                    "className": "slice-col",
+                    "legend": "Markup returned",
+                    "language": "html",
+                    "children": "{{{sample.htmlDetails.simple.markup}}}"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "{{sample.htmlDetails.classic.legend}} :"
+            }
+          },
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "className": "slice-col",
+                    "legend": "JCOD node",
+                    "language": "json",
+                    "children": "{{{sample.htmlDetails.classic.jcod}}}"
+                  }
+                },
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "theme": "code-light",
+                    "className": "slice-col",
+                    "legend": "Markup returned",
+                    "language": "html",
+                    "children": "{{{sample.htmlDetails.classic.markup}}}"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "{{sample.htmlDetails.advance.legend}} :"
+            }
+          },
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "className": "slice-col",
+                    "legend": "JCOD Node",
+                    "language": "json",
+                    "children": "{{{sample.htmlDetails.advance.jcod}}}"
+                  }
+                },
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "theme": "code-light",
+                    "className": "slice-col",
+                    "legend": "Markup returned",
+                    "language": "html",
+                    "children": "{{{sample.htmlDetails.advance.markup}}}"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "Finally, a JCOD tree of all these elements :"
+            }
+          },
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "className": "slice-col",
+                    "legend": "JCOD Tree",
+                    "language": "json",
+                    "children": "{{{sample.html.jcod}}}"
+                  }
+                },
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "theme": "code-light",
+                    "className": "slice-col",
+                    "legend": "Markup returned",
+                    "language": "html",
+                    "children": "{{{sample.html.markup}}}"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "## Sample Of JCOD node for Web Components  \nJust as the HTML markup, JCOD can be use to produce any Web Components (Or Custom Element). These Web Components must be defined before the parsing of JCOD (but this step can also be done by the Parser you will use - _reffered to the documentation of your Parser to knows its possibilities_)."
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "Simple implementation of Web Components in JCOD tree :"
+            }
+          },
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "className": "slice-col",
+                    "legend": "JCOD Tree",
+                    "language": "json",
+                    "children": "{{{sample.webComponent.jcod}}}"
+                  }
+                },
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "theme": "code-light",
+                    "className": "slice-col",
+                    "legend": "Markup returned",
+                    "language": "html",
+                    "children": "{{{sample.webComponent.markup}}}"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "## Sample Of JCOD node for React (or other Render Library)  \nHistorically, React has received the first implementation of JCOD. __Depending the Parser used, the approach under this implementation offer more possibilities.__  \nAlso, the possibilities (and limitation) offer for the React implementation are the same for the major parts of the render librairies, like Vue.JS or Svelte."
+            }
+          },
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "### Extended possibilities & Limitations  \nUnlike traditional HTML components, the React components (thanks to JSX) can set many types of value as attributes (the props in the React world). So __you can use other type than simple String, like Number, Array or Object__.  \nHowever, beacause a JCOD node is a simple JSON-Compliant node, __we are also limited to the Type available in the JSON specification__. (So, we can not use some Type like 'Function' or 'Symbol').  \nFinally, the Parser can also offer some specificals solutions for this limitations and also for the node props (who allows to set a JCOD tree as value for some props).  \n\n_Referred to the documentation of your parser to know more about its possibilities._"
+            }
+          },
+
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "align": "left",
+              "md": "Below, you can see some implementations of React Components in JCOD tree and the particularity of use ."
+            }
+          },
+          {
+            "component": "SliceWrapper",
+            "props": {
+              "element": "section",
+              "children": [
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "className": "slice-col",
+                    "legend": "JCOD Tree",
+                    "language": "json",
+                    "children": "{{{sample.webComponent.jcod}}}"
+                  }
+                },
+                {
+                  "component": "CodeViewer",
+                  "props": {
+                    "theme": "code-light",
+                    "className": "slice-col",
+                    "legend": "Markup JSX returned",
+                    "language": "html",
+                    "children": "{{{sample.webComponent.markup}}}"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "direction": "column",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "## To summarize..."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "SliceWrapper",
+      "props": {
+        "element": "section",
+        "direction": "column-stretch",
+        "children": [
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "### What JCOD is.  \n\n- JCOD means “JSON as Component Object Description”.  \n- JCOD is an Agnostic API.  \n- JCOD, like JSON, is a lightweight data-interchange format.  \n- It uses to describe a Template View structure who use components.  \n- It is very utile to share Template View structure who use components.  \n- A JCOD node is a JSON object who follows a specific format of Key-Value or a string.  \n- A JCOD tree is an array of JCOD nodes."
+            }
+          },
+          {
+            "component": "MarkdownWrapper",
+            "props": {
+              "md": "### What JCOD is not.  \n\n- It is not a new language.  \n- It is not a tool for writing your components. JCOD is only used to call and organize your components inside your Template View. Your traditional coding tools will be used to write your components.   \n- It is not a parser. But it requires a parser to be interpreted in your favorite language."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

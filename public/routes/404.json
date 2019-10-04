@@ -1,0 +1,46 @@
+{
+  "route": {
+    "path": "/404"
+  },
+  "jcodContent": [
+    {
+      "key": "test-1",
+      "component": "div",
+      "props": {
+        "children": "UNE 404"
+      }
+    },
+    {
+      "key": "test-2",
+      "component": "SmartSection",
+      "props": {
+        "element": "section",
+        "children": [
+          "Une smart section",
+          {
+            "key": "test-0",
+            "component": "popup-info",
+            "props": {
+              "children": "Un Custom Element",
+              "img": "//fakeimg.pl/350x200/f00/fff?text=Info"
+            }
+          },
+          {
+            "key": "test-1",
+            "component": "div",
+            "props": {
+              "children": "Une div !"
+            }
+          },
+          {
+            "key": "test-2",
+            "component": "SampleBloc",
+            "props": {
+              "children": "Un Sample bloc"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
