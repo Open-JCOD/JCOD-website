@@ -1,0 +1,61 @@
+{
+  "name": "jcod-website",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "run-p build-register start-react",
+    "start-react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-register": "json-routes-loader"
+  },
+  "buildRegisterConfig": {
+    "devMode": true,
+    "debug": false,
+    "relativeRootDir": "./public/",
+    "routeFileExtension": "json",
+    "registerPath": "routes/index.json",
+    "routesDir": "routes/",
+    "extendedData": {}
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@researchgate/react-intersection-observer": "^1.0.1",
+    "indent.js": "^0.3.4",
+    "intersection-observer": "^0.7.0",
+    "jcod-react-parser": "0.3.6",
+    "leaflet": "^1.5.1",
+    "mapbox-gl": "^1.3.1",
+    "mapbox-gl-leaflet": "0.0.9",
+    "mustache": "^3.1.0",
+    "prismjs": "^1.17.1",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-leaflet": "^2.4.0",
+    "react-markdown": "^4.1.0",
+    "react-router-dom": "5.0.1",
+    "react-router-json-routes-loader": "0.2.0",
+    "react-scripts": "3.1.1",
+    "react-simple-code-editor": "^0.9.14",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "json-routes-loader": "0.3.3",
+    "npm-run-all": "4.1.5"
+  }
+}
