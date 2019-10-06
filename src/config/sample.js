@@ -1,14 +1,14 @@
 export const sampleHtml = [
   {
     key: "simple",
-    comment: "Very simple element, without children or attributes.",
+    comment: "Very simple element, without children or attributes",
     node: {
       component: "tr"
     }
   },
   {
     key: "classic",
-    comment: "Typical simple element.",
+    comment: "Typical simple element",
     node: {
       component: "strong",
       children: "Hello world",
@@ -19,7 +19,7 @@ export const sampleHtml = [
   },
   {
     key: "advance",
-    comment: "Complex element with JCOD tree as children.",
+    comment: "Complex element with JCOD tree as children",
     node: {
       component: "div",
       children: [

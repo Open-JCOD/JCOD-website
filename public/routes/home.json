@@ -35,7 +35,7 @@
                           "language": "json",
                           "legend": "JCOD node",
                           "children": [
-                            "// This JCOD... :",
+                            "// This JCOD...",
                             "{{{jcodPresentation.jcod}}}"
                           ]
                         }
@@ -73,7 +73,7 @@
           {
             "component": "MarkdownWrapper",
             "props": {
-              "md": "Give for rendering :"
+              "md": "Give for rendering:"
             }
           },
           {
@@ -138,7 +138,7 @@
           {
             "component": "MarkdownWrapper",
             "props": {
-              "md": "## Definition of JCOD node  \n\nBelow, you can see how the JCOD API definition is very simple : "
+              "md": "## Definition of JCOD node  \n\nIn this section, you will see some very simple uses of JCOD nodes: "
             }
           },
           {
@@ -185,7 +185,7 @@
             "component": "MarkdownWrapper",
             "props": {
               "align": "left",
-              "md": "{{sample.htmlDetails.simple.legend}} :"
+              "md": "{{sample.htmlDetails.simple.legend}}:"
             }
           },
           {
@@ -220,7 +220,7 @@
             "component": "MarkdownWrapper",
             "props": {
               "align": "left",
-              "md": "{{sample.htmlDetails.classic.legend}} :"
+              "md": "{{sample.htmlDetails.classic.legend}}:"
             }
           },
           {
@@ -255,7 +255,7 @@
             "component": "MarkdownWrapper",
             "props": {
               "align": "left",
-              "md": "{{sample.htmlDetails.advance.legend}} :"
+              "md": "{{sample.htmlDetails.advance.legend}}:"
             }
           },
           {
@@ -290,7 +290,7 @@
             "component": "MarkdownWrapper",
             "props": {
               "align": "left",
-              "md": "Finally, a JCOD tree of all these elements :"
+              "md": "Finally, a JCOD tree of all these elements:"
             }
           },
           {
@@ -333,7 +333,7 @@
             "component": "MarkdownWrapper",
             "props": {
               "align": "left",
-              "md": "Simple implementation of Web Components in JCOD tree :"
+              "md": "Simple implementation of Web Components in JCOD tree:"
             }
           },
           {
