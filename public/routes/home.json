@@ -13,7 +13,7 @@
           {
             "component": "MarkdownWrapper",
             "props": {
-              "md": "## About JCOD  \nJCOD is a data-interchange format, a subset of JSON. It help of dynamically build layout from a list of Template Components, to code faster, improved isolation and stop with the static layout.  \n\n"
+              "md": "## About JCOD  \nJCOD is a data-interchange format, a subset of JSON. It helps to dynamically build layout from a list of Template Components, to code faster, to improved isolation and to stop with the static layout.  \n\n"
             }
           },
 

@@ -199,13 +199,13 @@ const basicSample = {
 };
 
 const jcodObjectDesc = `{
-  component: /REQUIRE/ 
+  component: /REQUIRED/ 
         STRING // "TagName of component",
-  children: /NOT-REQUIRE/ 
+  children: /OPTIONAL/ 
         STRING // "'String' contained inside the tag component",
         (or) JCOD-OBJECT // "{Component} contained inside the tag component",
         (or) ARRAY-OF-STRING-OR-OBJECT // "'String' and/or {Components} contained inside the tag component",
-  props: /NOT-REQUIRE/
+  props: /OPTIONAL/
         JCOD-PROPS-OBJECT // "List of Key-value who defined the attributes of component"
 }`;
 
