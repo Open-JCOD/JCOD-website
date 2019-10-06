@@ -82,6 +82,7 @@ export const sampleReact = [
     children: "Hello I am JCOD.",
     props: {
       author: {
+        id: 23,
         pseudo: "JCOD",
         avatar: "jcod-logo"
       },
@@ -93,6 +94,7 @@ export const sampleReact = [
     children: "Nice to meet you, I am React.",
     props: {
       author: {
+        id: 12,
         pseudo: "React",
         avatar: "react-logo"
       },
@@ -105,6 +107,7 @@ export const sampleReact = [
       "I think we have a date together but before, do you have a parser ?",
     props: {
       author: {
+        id: 23,
         pseudo: "JCOD",
         avatar: "jcod-logo"
       },

@@ -6,20 +6,8 @@
     "/about-us": {
       "path": "/routes/about-us.json"
     },
-    "/events": {
-      "path": "/routes/events.json"
-    },
-    "/home": {
-      "path": "/routes/home-backup.json"
-    },
-    "/jcod": {
-      "path": "/routes/home-jcod.json"
-    },
     "/": {
       "path": "/routes/home.json"
-    },
-    "/test": {
-      "path": "/routes/test.json"
     }
   }
 }

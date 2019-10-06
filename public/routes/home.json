@@ -397,7 +397,7 @@
                     "className": "slice-col",
                     "legend": "JCOD Tree",
                     "language": "json",
-                    "children": "{{{sample.webComponent.jcod}}}"
+                    "children": "{{{sample.react.jcod}}}"
                   }
                 },
                 {
@@ -407,7 +407,7 @@
                     "className": "slice-col",
                     "legend": "Markup JSX returned",
                     "language": "html",
-                    "children": "{{{sample.webComponent.markup}}}"
+                    "children": "{{{sample.react.markup}}}"
                   }
                 }
               ]

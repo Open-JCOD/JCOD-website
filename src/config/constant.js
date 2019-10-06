@@ -73,7 +73,10 @@ function parseJCOD(jcodTree, availableComponents) {
               value = convertQuote(_value);
               break;
             case "object":
-              value = convertQuote(JSON.stringify(_value));
+              value = JSON.stringify(_value, null, 2);
+              break;
+            case "number":
+              value = _value;
               break;
             default:
               value = _value.toString();
@@ -287,5 +290,7 @@ const constData = {
     react: sampleObjectFromJCOD(sample.sampleReact)
   }
 };
+
+console.log(`${sampleObjectFromJCOD(sample.sampleReact).jcod}`);
 
 export default constData;
