@@ -291,6 +291,4 @@ const constData = {
   }
 };
 
-console.log(`${sampleObjectFromJCOD(sample.sampleReact).jcod}`);
-
 export default constData;
