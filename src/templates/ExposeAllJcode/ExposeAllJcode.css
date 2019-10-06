@@ -7,6 +7,7 @@
 .jcod-presentation .logo {
   max-width: 4.5em;
   height: auto;
+  box-shadow: 4px 4px 0.8em 0em rgba(0, 0, 0, 0.75);
 }
 @media (min-width: 450px) {
   .jcod-presentation .logo {
@@ -26,6 +27,7 @@
   font-weight: 700;
   font-style: italic;
   min-height: 1.6em;
+  box-shadow: 4px 4px 0.8em 0em rgba(0, 0, 0, 0.75);
 }
 .jcod-presentation .bubble:before {
   content: "";
