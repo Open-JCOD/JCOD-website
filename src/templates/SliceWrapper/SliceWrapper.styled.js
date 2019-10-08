@@ -1,10 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const SliceWrapContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  display: block;
 
   color: ${({ theme }) => theme.default || "currentColor"};
   background-color: ${({ theme }) => theme.enhancement || "transparent"};
