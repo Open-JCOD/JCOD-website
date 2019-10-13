@@ -1,6 +1,8 @@
 # JCOD
 
-Web site of JCOD.
+Website of JCOD.
+
+![JCOD Logo](https://raw.githubusercontent.com/Open-JCOD/JCOD-website/master/public/img/JCOD-Logo-advance-small.png)
 
 ## About
 
